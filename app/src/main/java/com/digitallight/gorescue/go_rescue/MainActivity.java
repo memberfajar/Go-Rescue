@@ -66,7 +66,7 @@ public class MainActivity extends ListActivity {
         protected String doInBackground(String... params) {
             try {
                 Content = CustomHttpClient.executeHttpPost(
-                        "http://192.168.56.1/IcaksamaCrud/android/getdata.php",
+                        "http://127.0.0.1/IcaksamaCrud/android/getdata.php",
                         data);
             } catch (ClientProtocolException e) {
                 Error = e.getMessage();
